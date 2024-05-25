@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ECommerce.Order.Application.Features.CQRS.Queries.OrderDetailQueries
+namespace ECommerce.Order.Application.Features.CQRS.Commands.OrderDetailCommands
 {
-    public class GetOrderDetailQuery
+    public class RemoveOrderDetailCommand
     {
         public int Id { get; set; }
 
-        public GetOrderDetailQuery(int id)
+        public RemoveOrderDetailCommand(int id)
         {
             Id = id;
         }

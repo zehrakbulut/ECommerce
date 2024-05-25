@@ -1,4 +1,5 @@
-﻿using ECommerce.Order.Application.Interfaces;
+﻿using ECommerce.Order.Application.Features.CQRS.Commands.AddressCommands;
+using ECommerce.Order.Application.Interfaces;
 using ECommerce.Order.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,8 @@ namespace ECommerce.Order.Application.Features.CQRS.Handlers.AddressHandlers
         {
             _repository = repository;
         }
-
-        public async Task Handle(RemoveAddressCommandHandler command)
+            
+        public async Task Handle(RemoveAddressCommand command)
         {
             var value = await _repository.GetByIdAsync(command.Id);
             await _repository.DeleteAsync(value);
