@@ -12,7 +12,7 @@ namespace ECommerce.Order.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=...;itinital Catalog=ECommerceOrderDb;intgrated Security=true");
+            optionsBuilder.UseSqlServer("Server=localhost,1440;initial Catalog=ECommerceOrderDb;User=sa;Password=123456aA*");
         }
 
         public DbSet<Address> Addresses { get; set; }
@@ -20,3 +20,4 @@ namespace ECommerce.Order.Persistence.Context
         public DbSet<Ordering> Orderings { get; set; }
     }
 }
+    
