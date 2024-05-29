@@ -70,7 +70,6 @@ namespace ECommerce.IdentityServer
                 IdentityServerConstants.StandardScopes.OpenId,
                 IdentityServerConstants.StandardScopes.Profile
                 },
-
                 AccessTokenLifetime=600
             }
         };

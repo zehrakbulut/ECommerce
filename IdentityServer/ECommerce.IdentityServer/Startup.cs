@@ -76,7 +76,8 @@ namespace ECommerce.IdentityServer
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                //app.UseDatabaseErrorPage(); //.net 6.o da bu kaldırılmış gbt diyr :)
+                app.UseMigrationsEndPoint();
             }
 
             app.UseStaticFiles();
