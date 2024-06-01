@@ -3,3 +3,4 @@ Catalog   -->  7090
 Discount  -->  7091
 Order     -->  7092
 Cargo     -->  7093
+Basket    -->  7094
