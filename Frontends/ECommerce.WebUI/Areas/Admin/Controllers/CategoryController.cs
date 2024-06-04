@@ -76,5 +76,39 @@ namespace ECommerce.WebUI.Areas.Admin.Controllers
             }
             return View();
         }
+
+        [Route("UpdateCategory/{id}")]
+        [HttpGet]
+        public async Task<IActionResult> UpdateCategory(string id)
+        {
+            ViewBag.v1 = "Ana Sayfa";
+            ViewBag.v2 = "Kategoriler";
+            ViewBag.v3 = "Kategori Güncelleme Sayfası";
+            ViewBag.v0 = "Kategori İşlemleri";
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7090/api/Categories/"+id);
+            if(responseMessage.IsSuccessStatusCode )
+            {
+                var jsonData=await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<UpdateCategoryDto>(jsonData);
+                return View(values);
+            }
+            return View();
+        }
+
+        [Route("UpdateCategory/{id}")]
+        [HttpPost]
+        public async Task<IActionResult> UpdateCategory(UpdateCategoryDto updateCategoryDto)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var jsonData=JsonConvert.SerializeObject(updateCategoryDto);
+            StringContent stringContent= new StringContent(jsonData,Encoding.UTF8,"application/json");
+            var responseMessage = await client.PutAsync("https://localhost:7090/api/Categories/" , stringContent);
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                return RedirectToAction("Index", "Category", new { area = "Admin" });
+            }
+            return View();
+        }
     }
 }

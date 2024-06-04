@@ -1,7 +1,7 @@
-﻿@model CreateCategoryDto
+﻿@model UpdateCategoryDto
 
 @{
-    ViewData["Title"] = "CreateCategory";
+    ViewData["Title"] = "UpdateCategory";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
 }
 
@@ -10,15 +10,17 @@
 
         <div class="col-md-12">
             <div class="chart-box">
-                <h4>Kategori Ekleme Sayfası</h4>
-                <p>Kategori ile ilgili ekleme işlemlerinizi aşağıdaki panel üzerinden gerçekleştirebilirsiniz.</p>
+                <h4>Kategori Güncelleme Sayfası</h4>
                 <div class="bs-example" data-example-id="bordered-table">
-                    
+
                     <form method="post">
+                        <label>Kategori Id</label>
+                        <input type="text" readonly class="form-control" asp-for="CategoryId" />
+                        <br />
                         <label>Kategori Adı</label>
                         <input type="text" class="form-control" asp-for="CategoryName" />
                         <br />
-                        <button class="btn btn-primary">Kategoriyi Ekle</button>
+                        <button class="btn btn-primary">Kategoriyi Güncelle</button>
                     </form>
 
                 </div>
@@ -26,3 +28,4 @@
         </div>
     </div>
 </section>
+
