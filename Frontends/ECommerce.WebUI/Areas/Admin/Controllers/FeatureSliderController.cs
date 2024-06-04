@@ -34,7 +34,7 @@ namespace ECommerce.WebUI.Areas.Admin.Controllers
                 return View(values);
             }
             return View();
-        }
+        }   
 
         [HttpGet]
         [Route("CreateFeatureSlider")]
