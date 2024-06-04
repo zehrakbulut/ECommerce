@@ -21,7 +21,7 @@ namespace ECommerce.Catalog.Controllers
         [HttpGet]
         public async Task<IActionResult> ProductList()
         {
-            var values = await _productService.GetAllProductAsync();
+            var values = await _productService.GettAllProductAsync();
             return Ok(values);
         }
 
@@ -51,6 +51,13 @@ namespace ECommerce.Catalog.Controllers
         {
             await _productService.UpdateProductAsync(updateProductDto);
             return Ok("Ürün başarıyla güncellendi");
+        }
+
+        [HttpGet("ProductListWithCategory")]
+        public async Task<IActionResult> ProductListWithCategory()
+        {
+            var values = await _productService.GetProductsWithCategoryAsync();
+            return Ok(values);
         }
     }
 }
