@@ -1,18 +1,15 @@
-﻿<div class="col-lg-4">
-    <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="https://i.pinimg.com/736x/98/e9/ef/98e9ef7fa28b0ab2f32b58ebdf8f5699.jpg" alt="">
-        <div class="offer-text">
-            <h6 class="text-white text-uppercase">İNDİRİM 20%</h6>
-            <h3 class="text-white mb-3">Özel Teklifler</h3>
-            <a href="" class="btn btn-primary">Alışverişe Başlayın</a>
+﻿@model List<ResultSpecialOfferDto>
+
+<div class="col-lg-4">
+    @foreach (var item in Model)
+    {
+        <div class="product-offer mb-30" style="height: 200px;">
+            <img class="img-fluid" src="@item.ImageUrl" alt="">
+            <div class="offer-text">
+                <h6 class="text-white text-uppercase">@item.Title</h6>
+                <h3 class="text-white mb-3">@item.SubTitle</h3>
+                <a href="" class="btn btn-primary">Alışverişe Başlayın</a>
+            </div>
         </div>
-    </div>
-    <div class="product-offer mb-30" style="height: 200px;">
-        <img class="img-fluid" src="https://t4.ftcdn.net/jpg/02/67/08/05/360_F_267080574_BxJArntJBY5rQLEsfnFmqMEJ2aAU9jfA.webp" alt="">
-        <div class="offer-text">
-            <h6 class="text-white text-uppercase">İNDİRİM 30%</h6>
-            <h3 class="text-white mb-3">Günün Fırsatı</h3>
-            <a href="" class="btn btn-primary">Hemen Kullanın</a>
-        </div>
-    </div>
+    }
 </div>
