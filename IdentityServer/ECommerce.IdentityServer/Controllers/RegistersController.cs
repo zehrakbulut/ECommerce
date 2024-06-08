@@ -9,7 +9,7 @@ using static IdentityServer4.IdentityServerConstants;
 
 namespace ECommerce.IdentityServer.Controllers
 {
-    [Authorize(LocalApi.PolicyName)]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class RegistersController : ControllerBase
