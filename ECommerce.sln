@@ -66,7 +66,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.DtoLayer", "Front
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comment", "Comment", "{2E55D6D8-8D54-4E7D-9C2B-780DA351FA2B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Comment", "Services\Comment\ECommerce.Comment\ECommerce.Comment.csproj", "{A611D42F-667E-4090-9DFE-A37A3F105871}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Comment", "Services\Comment\ECommerce.Comment\ECommerce.Comment.csproj", "{A611D42F-667E-4090-9DFE-A37A3F105871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
