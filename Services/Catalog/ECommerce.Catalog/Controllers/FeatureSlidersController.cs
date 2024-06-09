@@ -1,10 +1,12 @@
 ﻿using ECommerce.Catalog.Dtos.FeatureSliderDtos;
 using ECommerce.Catalog.Services.FeatureSliderServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Catalog.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FeatureSlidersController : ControllerBase
