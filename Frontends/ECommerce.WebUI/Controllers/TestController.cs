@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using System.Net.Http.Headers;
 
 namespace ECommerce.WebUI.Controllers
 {
@@ -14,12 +15,10 @@ namespace ECommerce.WebUI.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-       
         public async Task<IActionResult> Index()
         {
-
-            string token;
-            using(var httpClient=new HttpClient())
+            string token="";
+            using (var httpClient = new HttpClient())
             {
                 var request = new HttpRequestMessage
                 {
@@ -33,18 +32,21 @@ namespace ECommerce.WebUI.Controllers
                     })
                 };
 
-                using(var response=await httpClient.SendAsync(request))
+                using (var response = await httpClient.SendAsync(request))
                 {
-                    if(response.IsSuccessStatusCode)
+                    if (response.IsSuccessStatusCode)
                     {
-                        var content=await response.Content.ReadAsStringAsync();
-                        var tokenResponse=JObject.Parse(content);
+                        var content = await response.Content.ReadAsStringAsync();
+                        var tokenResponse = JObject.Parse(content);
                         token = tokenResponse["access_token"].ToString();
                     }
                 }
             }
 
+
             var client = _httpClientFactory.CreateClient();
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
             var responseMessage = await client.GetAsync("https://localhost:7090/api/Categories");
             if (responseMessage.IsSuccessStatusCode)
             {
@@ -52,6 +54,11 @@ namespace ECommerce.WebUI.Controllers
                 var values = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData);
                 return View(values);
             }
+            return View();
+        }
+
+        public IActionResult Deneme1()
+        {
             return View();
         }
     }
