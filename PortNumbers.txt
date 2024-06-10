@@ -1,6 +1,10 @@
-Identity  -->  5001
-Catalog   -->  7090
-Discount  -->  7091
-Order     -->  7092
-Cargo     -->  7093
-Basket    -->  7094
+Ocelot      -->  5000
+Identity    -->  5001
+Catalog     -->  7090
+Discount    -->  7091
+Order       -->  7092
+Cargo       -->  7093
+Basket      -->  7094
+Comment     -->  7095
+Payment     -->  7096
+Images      -->  7097
