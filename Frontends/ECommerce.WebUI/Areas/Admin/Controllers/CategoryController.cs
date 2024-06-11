@@ -7,7 +7,6 @@ using System.Text;
 
 namespace ECommerce.WebUI.Areas.Admin.Controllers
 {
-
     [Area("Admin")]
     [Route("Admin/Category")]
 
