@@ -58,6 +58,7 @@ namespace ECommerce.WebUI.Areas.Admin.Controllers
         public async Task<IActionResult> UpdateCategory(string id)
         {
             CategoryViewbagList();
+
             var values = await _categoryService.GetByIdCategoryAsync(id);
             return View(values);
         }
