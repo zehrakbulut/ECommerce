@@ -1,4 +1,5 @@
 ﻿using ECommerce.DtoLayer.CatalogDtos.CategoryDtos;
+using ECommerce.WebUI.Services.CatalogServices.CategoryServices;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
@@ -9,10 +10,12 @@ namespace ECommerce.WebUI.Controllers
     public class TestController : Controller
     {
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly ICategoryService _categoryService;
 
-        public TestController(IHttpClientFactory httpClientFactory)
+        public TestController(IHttpClientFactory httpClientFactory, ICategoryService categoryService)
         {
             _httpClientFactory = httpClientFactory;
+            _categoryService = categoryService;
         }
 
         public async Task<IActionResult> Index()
@@ -60,6 +63,12 @@ namespace ECommerce.WebUI.Controllers
         public IActionResult Deneme1()
         {
             return View();
+        }
+
+        public async Task<IActionResult> Deneme2()
+        {
+            var values=await _categoryService.GetAllCategoryAsync();
+            return View(values);
         }
     }
 }
