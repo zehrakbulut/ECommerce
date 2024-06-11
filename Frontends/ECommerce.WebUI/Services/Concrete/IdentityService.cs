@@ -32,7 +32,7 @@ namespace ECommerce.WebUI.Services.Concrete
                 Address = _serviceApiSettings.IdentityServerUrl,
                 Policy = new DiscoveryPolicy
                 {
-                    RequireHttps = false,
+                    RequireHttps = false
                 }
             });
 
@@ -50,7 +50,7 @@ namespace ECommerce.WebUI.Services.Concrete
 
             var token=await _httpClient.RequestRefreshTokenAsync(refreshTokenRequest);
 
-            var authenticationToken=new List<AuthenticationToken>
+            var authenticationToken=new List<AuthenticationToken>()
             {
 
                 new AuthenticationToken
@@ -88,7 +88,7 @@ namespace ECommerce.WebUI.Services.Concrete
                 Address = _serviceApiSettings.IdentityServerUrl,
                 Policy = new DiscoveryPolicy
                 {
-                    RequireHttps = false,
+                    RequireHttps = false
                 }
             });
 
@@ -106,7 +106,7 @@ namespace ECommerce.WebUI.Services.Concrete
             var userInfoRequest = new UserInfoRequest
             {
                 Token = token.AccessToken,
-                Address = discoveryEndPoint.TokenEndpoint
+                Address = discoveryEndPoint.UserInfoEndpoint
             };
             
             var userValues=await _httpClient.GetUserInfoAsync(userInfoRequest);

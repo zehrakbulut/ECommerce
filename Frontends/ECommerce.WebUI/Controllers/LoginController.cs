@@ -1,6 +1,5 @@
 ﻿using ECommerce.DtoLayer.IdentityDtos.LoginDtos;
 using ECommerce.WebUI.Models;
-using ECommerce.WebUI.Services;
 using ECommerce.WebUI.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -13,7 +12,7 @@ using System.Text.Json;
 
 namespace ECommerce.WebUI.Controllers
 {
-	public class LoginController : Controller
+    public class LoginController : Controller
 	{
 		private readonly IHttpClientFactory _httpClientFactory;
 		private readonly ILoginService _loginService;
@@ -46,7 +45,7 @@ namespace ECommerce.WebUI.Controllers
             signInDto.Username = "ali01";
             signInDto.Password = "1111aA*";
 			await _identityService.SignIn(signInDto);
-			return RedirectToAction("Index", "Test");
+			return RedirectToAction("Index", "User");
 		}
 	}
 }
