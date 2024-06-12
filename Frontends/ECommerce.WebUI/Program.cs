@@ -2,6 +2,7 @@ using ECommerce.WebUI.Handlers;
 using ECommerce.WebUI.Services.CatalogServices.AboutServices;
 using ECommerce.WebUI.Services.CatalogServices.BrandServices;
 using ECommerce.WebUI.Services.CatalogServices.CategoryServices;
+using ECommerce.WebUI.Services.CatalogServices.ContactServices;
 using ECommerce.WebUI.Services.CatalogServices.FeatureServices;
 using ECommerce.WebUI.Services.CatalogServices.FeatureSliderServices;
 using ECommerce.WebUI.Services.CatalogServices.OfferDiscountServices;
@@ -115,6 +116,11 @@ builder.Services.AddHttpClient<IProductDetailService, ProductDetailService>(opt 
 builder.Services.AddHttpClient<ICommentService, CommentService>(opt =>
 {
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Comment.Path}");
+}).AddHttpMessageHandler<ClientCredentialTokenHandler>();
+
+builder.Services.AddHttpClient<IContactService, ContactService>(opt =>
+{
+    opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Catalog.Path}");
 }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
 
 
