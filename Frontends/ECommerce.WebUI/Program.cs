@@ -9,6 +9,7 @@ using ECommerce.WebUI.Services.CatalogServices.ProductDetailServices;
 using ECommerce.WebUI.Services.CatalogServices.ProductImageServices;
 using ECommerce.WebUI.Services.CatalogServices.ProductServices;
 using ECommerce.WebUI.Services.CatalogServices.SpecialOfferServices;
+using ECommerce.WebUI.Services.CommentServices;
 using ECommerce.WebUI.Services.Concrete;
 using ECommerce.WebUI.Services.Interfaces;
 using ECommerce.WebUI.Settings;
@@ -109,6 +110,11 @@ builder.Services.AddHttpClient<IProductImageService, ProductImageService>(opt =>
 builder.Services.AddHttpClient<IProductDetailService, ProductDetailService>(opt =>
 {
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Catalog.Path}");
+}).AddHttpMessageHandler<ClientCredentialTokenHandler>();
+
+builder.Services.AddHttpClient<ICommentService, CommentService>(opt =>
+{
+    opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Comment.Path}");
 }).AddHttpMessageHandler<ClientCredentialTokenHandler>();
 
 

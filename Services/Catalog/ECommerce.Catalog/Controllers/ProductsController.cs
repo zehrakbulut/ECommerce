@@ -1,7 +1,6 @@
 ﻿using ECommerce.Catalog.Dtos.ProductDtos;
 using ECommerce.Catalog.Services.ProductServices;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.Catalog.Controllers

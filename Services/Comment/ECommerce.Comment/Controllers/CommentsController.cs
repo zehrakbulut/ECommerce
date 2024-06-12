@@ -3,17 +3,17 @@ using ECommerce.Comment.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace ECommerce.Comment.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
 
     public class CommentsController : ControllerBase
     {
         private readonly CommentContext _context;
-
         public CommentsController(CommentContext context)
         {
             _context = context;
@@ -22,12 +22,12 @@ namespace ECommerce.Comment.Controllers
         [HttpGet]
         public IActionResult CommentList()
         {
-            var values=_context.UserComments.ToList();
+            var values = _context.UserComments.ToList();
             return Ok(values);
         }
 
         [HttpPost]
-        public IActionResult CreateCommemnt(UserComment userComment)
+        public IActionResult CreateComment(UserComment userComment)
         {
             _context.UserComments.Add(userComment);
             _context.SaveChanges();
@@ -37,7 +37,7 @@ namespace ECommerce.Comment.Controllers
         [HttpDelete]
         public IActionResult DeleteComment(int id)
         {
-            var value=_context.UserComments.Find(id);
+            var value = _context.UserComments.Find(id);
             _context.UserComments.Remove(value);
             _context.SaveChanges();
             return Ok("Yorum başarıyla silindi");
@@ -46,7 +46,7 @@ namespace ECommerce.Comment.Controllers
         [HttpGet("{id}")]
         public IActionResult GetComment(int id)
         {
-            var value= _context.UserComments.Find(id);
+            var value = _context.UserComments.Find(id);
             return Ok(value);
         }
 
@@ -58,10 +58,10 @@ namespace ECommerce.Comment.Controllers
             return Ok("Yorum başarıyla güncellendi");
         }
 
-        [HttpGet("CommentListByProductId")]
+        [HttpGet("CommentListByProductId/{id}")]
         public IActionResult CommentListByProductId(string id)
         {
-            var value = _context.UserComments.Where(x=>x.ProductId==id).ToList();
+            var value = _context.UserComments.Where(x => x.ProductId == id).ToList();
             return Ok(value);
         }
     }
