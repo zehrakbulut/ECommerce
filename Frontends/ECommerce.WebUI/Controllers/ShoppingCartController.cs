@@ -1,6 +1,7 @@
 ﻿using ECommerce.DtoLayer.BasketDtos;
 using ECommerce.WebUI.Services.BasketServices;
 using ECommerce.WebUI.Services.CatalogServices.ProductServices;
+using ECommerce.WebUI.Services.DiscountServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.WebUI.Controllers
@@ -16,13 +17,19 @@ namespace ECommerce.WebUI.Controllers
             _basketService = basketService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             ViewBag.directory1 = "Ana Sayfa";
             ViewBag.directory2 = "Ürünler";
             ViewBag.directory3 = "Sepetim";
+            var values = await _basketService.GetBasket();
+            ViewBag.total = values.TotalPrice;
+            var totalPriceWithTax = values.TotalPrice + values.TotalPrice / 100 * 10;
+            var tax = values.TotalPrice / 100 * 10;
+            ViewBag.totalPriceWithTax = totalPriceWithTax;
+            ViewBag.tax = tax;
             return View();
-        }
+        }   
 
         public async Task<IActionResult> AddBasketItem(string id)
         {
