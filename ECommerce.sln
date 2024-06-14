@@ -39,6 +39,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirements", "Requirement
 		LoginIndex.txt = LoginIndex.txt
 		OcelotCodeExample.txt = OcelotCodeExample.txt
 		OcelotLink.txt = OcelotLink.txt
+		OrderHtml.txt = OrderHtml.txt
 		PortainerCmd.txt = PortainerCmd.txt
 		PortNumbers.txt = PortNumbers.txt
 		SimpleCode.txt = SimpleCode.txt
@@ -75,15 +76,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateway", "ApiGateway", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RapidApi", "RapidApi", "{5659BCE3-5D6B-48BD-9E2C-32CE0B129AF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.OcelotGateway", "ApiGateway\ECommerce.OcelotGateway\ECommerce.OcelotGateway.csproj", "{D32A0AE6-5CCC-4C70-9B7B-73755CDC7FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.OcelotGateway", "ApiGateway\ECommerce.OcelotGateway\ECommerce.OcelotGateway.csproj", "{D32A0AE6-5CCC-4C70-9B7B-73755CDC7FC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{1C184072-6996-4AA3-AD07-2AED8DB910CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Payment", "Services\Payment\ECommerce.Payment\ECommerce.Payment.csproj", "{4AD1D20A-0762-489C-B46D-11D7DC40E9AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Payment", "Services\Payment\ECommerce.Payment\ECommerce.Payment.csproj", "{4AD1D20A-0762-489C-B46D-11D7DC40E9AF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{208C18AC-F8C7-42CA-8498-0FE79B0F05E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Images", "Services\Images\ECommerce.Images\ECommerce.Images.csproj", "{EDDCB322-EC3A-4346-97EA-6D446CB82E5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ECommerce.Images", "Services\Images\ECommerce.Images\ECommerce.Images.csproj", "{EDDCB322-EC3A-4346-97EA-6D446CB82E5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
