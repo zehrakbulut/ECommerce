@@ -2,11 +2,11 @@
 
 namespace ECommerce.WebUI.Services.OrderServices.OrderAddressServices
 {
-    public class OrderAddressServices : IOrderAddressServices
+    public class OrderAddressService : IOrderAddressService
     {
         private readonly HttpClient _httpClient;
 
-        public OrderAddressServices(HttpClient httpClient)
+        public OrderAddressService(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }

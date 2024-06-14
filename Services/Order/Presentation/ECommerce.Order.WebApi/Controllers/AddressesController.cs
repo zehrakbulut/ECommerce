@@ -10,7 +10,7 @@ namespace ECommerce.Order.WebApi.Controllers
     [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    public class AdressesController : ControllerBase
+    public class AddressesController : ControllerBase
     {
         private readonly GetAddressQueryHandler _getAddressQueryHandler;
         private readonly GetAddressByIdQueryHandler _getAddressByIdQueryHandler;
@@ -18,7 +18,7 @@ namespace ECommerce.Order.WebApi.Controllers
         private readonly UpdateAddressCommandHandler _updateAddressCommandHandler;
         private readonly RemoveAddressCommandHandler _removeAddressCommandHandler;
 
-        public AdressesController(GetAddressQueryHandler getAddressQueryHandler, GetAddressByIdQueryHandler getAddressByIdQueryHandler, CreateAddressCommandHandler createAddressCommandHandler, UpdateAddressCommandHandler updateAddressCommandHandler, RemoveAddressCommandHandler removeAddressCommandHandler)
+        public AddressesController(GetAddressQueryHandler getAddressQueryHandler, GetAddressByIdQueryHandler getAddressByIdQueryHandler, CreateAddressCommandHandler createAddressCommandHandler, UpdateAddressCommandHandler updateAddressCommandHandler, RemoveAddressCommandHandler removeAddressCommandHandler)
         {
             _getAddressQueryHandler = getAddressQueryHandler;
             _getAddressByIdQueryHandler = getAddressByIdQueryHandler;

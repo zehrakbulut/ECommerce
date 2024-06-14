@@ -2,7 +2,7 @@
 
 namespace ECommerce.WebUI.Services.OrderServices.OrderAddressServices
 {
-    public interface IOrderAddressServices
+    public interface IOrderAddressService
     {
        // Task<List<ResultAboutDto>> GetAllAboutAsync();
         Task CreateOrderAddressAsync(CreateOrderAddressDto createOrderAddressDto);

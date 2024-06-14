@@ -71,7 +71,7 @@ builder.Services.AddHttpClient<IBasketService, BasketService>(opt =>
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Basket.Path}");
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
-builder.Services.AddHttpClient<IOrderAddressServices, OrderAddressServices>(opt =>
+builder.Services.AddHttpClient<IOrderAddressService, OrderAddressService>(opt =>
 {
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Order.Path}");
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
