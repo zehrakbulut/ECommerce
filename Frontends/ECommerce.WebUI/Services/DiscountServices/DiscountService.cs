@@ -17,6 +17,13 @@ namespace ECommerce.WebUI.Services.DiscountServices
             var values=await responseMessage.Content.ReadFromJsonAsync<GetDiscountCodeDetailByCode>();
             return values;
         }
+
+        public async Task<int> GetDiscountCouponCountRate(string code)
+        {
+            var responseMessage = await _httpClient.GetAsync("http://localhost:7091/api/Discounts/GetDiscountCouponCountRate?code="+code);
+            var values = await responseMessage.Content.ReadFromJsonAsync<int>();
+            return values;
+        }
     }
 }
  
