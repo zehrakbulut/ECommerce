@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ECommerce.WebUI.Services.Interfaces;
+using ECommerce.WebUI.Services.OrderServices.OrderOrderingServices;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.WebUI.Areas.User.Controllers
 {
@@ -6,9 +8,20 @@ namespace ECommerce.WebUI.Areas.User.Controllers
 
     public class MyOrderController : Controller
     {
-        public IActionResult MyOrderList()
+        private readonly IOrderOrderingService _orderOrderingService;
+        private readonly IUserService _userService;
+
+        public MyOrderController(IOrderOrderingService orderOrderingService, IUserService userService)
         {
-            return View();
+            _orderOrderingService = orderOrderingService;
+            _userService = userService;
+        }
+
+        public async Task<IActionResult> MyOrderList()
+        {
+            var user = await _userService.GetUserInfo();
+            var values =await _orderOrderingService.GetOrderingByUserId(user.Id);
+            return View(values);
         }
     }
 }
