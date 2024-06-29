@@ -8,3 +8,4 @@ Basket      -->  7094
 Comment     -->  7095
 Payment     -->  7096
 Images      -->  7097
+Message     -->  7098

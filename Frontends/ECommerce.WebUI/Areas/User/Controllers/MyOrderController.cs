@@ -23,5 +23,5 @@ namespace ECommerce.WebUI.Areas.User.Controllers
             var values =await _orderOrderingService.GetOrderingByUserId(user.Id);
             return View(values);
         }
-    }
+    } 
 }
