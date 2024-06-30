@@ -32,7 +32,6 @@ namespace ECommerce.WebUI.Services.CatalogServices.AboutServices
 
         public async Task<UpdateAboutDto> GetByIdAboutAsync(string id)
         {
-            //var responseMessage= await client.DeleteAsync("https://localhost:7090/api/abouts?id="+id);
             var responseMessage = await _httpClient.GetAsync("abouts/" + id);
             var values = await responseMessage.Content.ReadFromJsonAsync<UpdateAboutDto>();
             return values;

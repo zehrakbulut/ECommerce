@@ -1,5 +1,6 @@
 using ECommerce.WebUI.Handlers;
 using ECommerce.WebUI.Services.BasketServices;
+using ECommerce.WebUI.Services.CargoServices.CargoCompanyServices;
 using ECommerce.WebUI.Services.CatalogServices.AboutServices;
 using ECommerce.WebUI.Services.CatalogServices.BrandServices;
 using ECommerce.WebUI.Services.CatalogServices.CategoryServices;
@@ -93,6 +94,11 @@ builder.Services.AddHttpClient<IOrderAddressService, OrderAddressService>(opt =>
 builder.Services.AddHttpClient<IDiscountService, DiscountService>(opt =>
 {
     opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Discount.Path}");
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<ICargoCompanyService, CargoCompanyService>(opt =>
+{
+    opt.BaseAddress = new Uri($"{values.OcelotUrl}/{values.Cargo.Path}");
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
 
 builder.Services.AddHttpClient<IMessageService, MessageService>(opt =>
