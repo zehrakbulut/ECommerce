@@ -18,6 +18,7 @@ using ECommerce.WebUI.Services.Interfaces;
 using ECommerce.WebUI.Services.MessageServices;
 using ECommerce.WebUI.Services.OrderServices.OrderAddressServices;
 using ECommerce.WebUI.Services.OrderServices.OrderOrderingServices;
+using ECommerce.WebUI.Services.UserIdentityServices;
 using ECommerce.WebUI.Settings;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -64,6 +65,11 @@ builder.Services.AddHttpClient<IClientCredentialTokenService, ClientCredentialTo
 var values = builder.Configuration.GetSection("ServiceApiSettings").Get<ServiceApiSettings>();
 
 builder.Services.AddHttpClient<IUserService, UserService>(opt =>
+{
+    opt.BaseAddress = new Uri(values.IdentityServerUrl);
+}).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
+
+builder.Services.AddHttpClient<IUserIdentityService, UserIdentityService>(opt =>
 {
     opt.BaseAddress = new Uri(values.IdentityServerUrl);
 }).AddHttpMessageHandler<ResourceOwnerPasswordTokenHandler>();
