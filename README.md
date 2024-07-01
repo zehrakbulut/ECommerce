@@ -27,8 +27,9 @@ URUN DETAY VE YORUMLAR
 ![Ekran görüntüsü 2024-07-01 141554](https://github.com/zehrakbulut/ECommerce/assets/103004228/bdbea3c2-79f9-4315-aada-0e4c61e21ace)
 
 
-SEPET
+SEPET - SİPARİŞ
 ![Ekran görüntüsü 2024-07-01 161349](https://github.com/zehrakbulut/ECommerce/assets/103004228/53803e0d-867a-40f7-92cf-9dff3b3f137a)
+![Ekran görüntüsü 2024-07-01 201218](https://github.com/zehrakbulut/ECommerce/assets/103004228/a5111761-7465-4d78-9a33-3fb38cc1bdea)
 
 
 ÖDEME KISMI
@@ -57,5 +58,18 @@ ADMİN
 ![Ekran görüntüsü 2024-07-01 141243](https://github.com/zehrakbulut/ECommerce/assets/103004228/baf5a1ba-3a61-4a48-8899-387120bbbc0e)
 ![Ekran görüntüsü 2024-07-01 141304](https://github.com/zehrakbulut/ECommerce/assets/103004228/a8fb1b40-8a0a-4c57-aff7-355b245479bd)
 ![Ekran görüntüsü 2024-07-01 163734](https://github.com/zehrakbulut/ECommerce/assets/103004228/d6cea798-b9a8-469b-8ef3-f5e7dd495653)
+
+
+USER
+![Ekran görüntüsü 2024-07-01 195856](https://github.com/zehrakbulut/ECommerce/assets/103004228/3805d79f-8ae4-41ca-972e-d3e47ca8f25d)
+
+DOCKER
+![Ekran görüntüsü 2024-07-01 194908](https://github.com/zehrakbulut/ECommerce/assets/103004228/25ea5e3c-4f78-4f3b-9de5-abdea549c56d)
+
+MONGO DB
+![Ekran görüntüsü 2024-07-01 200748](https://github.com/zehrakbulut/ECommerce/assets/103004228/9a7819a4-233e-42bc-9795-5acfba994f3a)
+![Ekran görüntüsü 2024-07-01 200638](https://github.com/zehrakbulut/ECommerce/assets/103004228/b2941033-d4ee-4101-9a32-141d699bfabb)
+
+
 
 
