@@ -119,7 +119,7 @@ Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağ�
 ![Ekran görüntüsü 2024-07-01 201742](https://github.com/zehrakbulut/ECommerce/assets/103004228/d6bfd02e-f497-49b2-97b8-cc73ebbda5a4)
 
 ## DBEAVER
-![Ekran görüntüsü 2024-07-01 201742](https://github.com/zehrakbulut/ECommerce/assets/103004228/f01a7758-a4ee-4759-bef0-05e71643478a)
+![Ekran görüntüsü 2024-07-01 205125](https://github.com/zehrakbulut/ECommerce/assets/103004228/c63bd690-a340-4c26-a6e0-5de8483c13cd)
 
 ## PGADMIN
 ![Ekran görüntüsü 2024-07-01 202241](https://github.com/zehrakbulut/ECommerce/assets/103004228/afbf4084-72a7-4227-a2e3-72f8f1d497fa)
