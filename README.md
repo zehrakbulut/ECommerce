@@ -1,4 +1,52 @@
-DEFAULT
+# HEDİYEM E-Ticaret Mikroservis Projesi
+
+HEDİYEM'e hoş geldiniz, mikroservis mimarisi kullanılarak tasarlanmış bir e-ticaret uygulamasıdır. Bu proje, kullanıcıların kayıt olup oturum açmalarını, ürünleri inceleyip sepetlerine eklemelerini ve sahte bir ödeme sistemi üzerinden alışverişlerini tamamlamalarını sağlar. Mikroservis mimarisi ile oluşturulan bu yapı, ölçeklenebilir ve yönetilebilir bir e-ticaret altyapısı sunar.
+
+## İçindekiler
+- [Giriş](#giriş)
+- [Mikroservis Genel Bakış](#mikroservis-genel-bakış)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Tasarım Desenleri](#tasarım-desenleri)
+- [Başlarken](#başlarken)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [Lisans](#lisans)
+
+## Giriş
+HEDİYEM, mikroservis mimarisinin gücünü ve esnekliğini gösteren kapsamlı bir e-ticaret çözümüdür. Uygulamayı daha küçük, bağımsız olarak yönetilebilen servislere bölerek, geliştirme, dağıtım ve ölçeklenebilirliği kolaylaştırıyoruz.
+
+## Mikroservis Genel Bakış
+Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağımsız olarak yönetilebilen ve birbiriyle iletişim halinde olan servislere bölme yaklaşımıdır. HediyeM'deki her mikroservis belirli bir işlevsellikten sorumludur:
+- **Kullanıcı Kimlik Doğrulama**: Kullanıcı kayıt ve oturum açma işlemlerini yönetir.
+- **Ürün Yönetimi**: Ürün listeleme ve detaylarını yönetir.
+- **Sepet Yönetimi**: Kullanıcı sepetlerini ve içindeki öğeleri yönetir.
+- **Ödeme İşleme**: Ödeme işlemlerini simüle eder.
+
+## Kullanılan Teknolojiler
+### Veritabanları
+- **MsSql (Yerel ve Docker)**
+- **PostgreSQL**
+- **Redis**
+- **MongoDB**
+
+### Backend Teknolojileri
+- **Docker**: Mikroservislerin konteynerize edilmesi.
+- **Identity**: Kullanıcı kimlik doğrulama ve yetkilendirme.
+- **JWT**: JSON Web Token ile güvenli token tabanlı kimlik doğrulama.
+- **RabbitMQ**: Asenkron iletişim için mesaj aracısı.
+- **DBEaver**: Veritabanı yönetim aracı.
+- **Google Cloud Storage**: Bulut depolama çözümü.
+- **Ocelot**: API Gateway ile istek yönlendirme yönetimi.
+- **Ajax**: Dinamik web sayfaları için asenkron JavaScript ve XML.
+- **Dapper**: Veritabanı işlemleri için hafif ORM.
+
+## Tasarım Desenleri
+- **Mediator Tasarım Deseni**: Karmaşık iletişim ve kontrol mantığını merkezi hale getirir.
+- **CQRS (Komut Sorgu Sorumluluğu Ayrımı)**: Okuma ve yazma işlemlerini performans ve ölçeklenebilirlik için ayırır.
+- **Onion Mimarisi**: Bağımsız, sürdürülebilir ve test edilebilir bir uygulama teşvik eder.
+- **Repository Tasarım Deseni**: Veri katmanını soyutlar, veri erişimini daha esnek ve birim testlerine uygun hale getirir.
+
+
+## DEFAULT
 ![Ekran görüntüsü 2024-07-01 130722](https://github.com/zehrakbulut/ECommerce/assets/103004228/6bb7a84e-8e46-4f00-a811-9b3d48d13961)
 ![Ekran görüntüsü 2024-07-01 132839](https://github.com/zehrakbulut/ECommerce/assets/103004228/783a7640-377d-4aeb-9526-c7ca55456332)
 ![Ekran görüntüsü 2024-07-01 132233](https://github.com/zehrakbulut/ECommerce/assets/103004228/9e306f0e-dbd1-404c-bd89-dfc4f89f43b7)
@@ -14,12 +62,12 @@ DEFAULT
 ![Ekran görüntüsü 2024-07-01 133958](https://github.com/zehrakbulut/ECommerce/assets/103004228/c009f81d-cb0e-4ac7-8487-c66d978e100d)
 ![Ekran görüntüsü 2024-07-01 134039](https://github.com/zehrakbulut/ECommerce/assets/103004228/d08318a8-f3cb-4add-a4f8-491b05e5c843)
 
-İLETİŞİM
+## İLETİŞİM
 ![Ekran görüntüsü 2024-07-01 134129](https://github.com/zehrakbulut/ECommerce/assets/103004228/46f13375-54cf-4bf7-a3fc-97dc3c341911)
 
 
 
-URUN DETAY VE YORUMLAR
+## ÜRÜN DETAY VE YORUMLAR
 ![Ekran görüntüsü 2024-07-01 142214](https://github.com/zehrakbulut/ECommerce/assets/103004228/333e1a5f-9c18-4b4b-8aaf-f8778cacc6f0)
 ![Ekran görüntüsü 2024-07-01 142227](https://github.com/zehrakbulut/ECommerce/assets/103004228/8c559ecb-ae5a-4dd8-b70e-b3596ef960c8)
 ![Ekran görüntüsü 2024-07-01 142242](https://github.com/zehrakbulut/ECommerce/assets/103004228/75c093e4-84f5-4c4a-94f6-65b1a2afe2c1)
@@ -27,29 +75,29 @@ URUN DETAY VE YORUMLAR
 ![Ekran görüntüsü 2024-07-01 141554](https://github.com/zehrakbulut/ECommerce/assets/103004228/bdbea3c2-79f9-4315-aada-0e4c61e21ace)
 
 
-SEPET - SİPARİŞ
+## SEPET - SİPARİŞ
 ![Ekran görüntüsü 2024-07-01 161349](https://github.com/zehrakbulut/ECommerce/assets/103004228/53803e0d-867a-40f7-92cf-9dff3b3f137a)
 ![Ekran görüntüsü 2024-07-01 201218](https://github.com/zehrakbulut/ECommerce/assets/103004228/a5111761-7465-4d78-9a33-3fb38cc1bdea)
 
 
-ÖDEME KISMI
+## ÖDEME KISMI
 ![Ekran görüntüsü 2024-07-01 162851](https://github.com/zehrakbulut/ECommerce/assets/103004228/ced5073a-7b44-4060-820c-f1f260b3fb7f)
 ![Ekran görüntüsü 2024-07-01 162940](https://github.com/zehrakbulut/ECommerce/assets/103004228/dfc73a82-0b10-4633-a3b8-63f2be0e718e)
 ![Ekran görüntüsü 2024-07-01 163002](https://github.com/zehrakbulut/ECommerce/assets/103004228/1208771d-c079-480b-8bb6-db8b7bbadae4)
 
 
-KAYIT OL
+## KAYIT OL
 ![Ekran görüntüsü 2024-07-01 163529](https://github.com/zehrakbulut/ECommerce/assets/103004228/92c7274c-2415-473e-a215-4175098c90a7)
 
-GİRİŞ
+## GİRİŞ
 ![Ekran görüntüsü 2024-07-01 163438](https://github.com/zehrakbulut/ECommerce/assets/103004228/ea6bb611-dd76-4d57-863f-d054b9f88cd4)
 
-KULLANICI PROFİL BİLGİSİ
+## KULLANICI PROFİL BİLGİSİ
 ![Ekran görüntüsü 2024-07-01 163557](https://github.com/zehrakbulut/ECommerce/assets/103004228/66cf9522-045a-4bd1-91d3-e4a8fb3dc3db)
 
 
 
-ADMİN
+## ADMİN
 ![Ekran görüntüsü 2024-07-01 140955](https://github.com/zehrakbulut/ECommerce/assets/103004228/39e3291d-9090-4c00-86bf-5ac770331e2d)
 ![Ekran görüntüsü 2024-07-01 141030](https://github.com/zehrakbulut/ECommerce/assets/103004228/c06a795b-5e56-42d9-8578-9cbc831b40ac)
 ![Ekran görüntüsü 2024-07-01 141057](https://github.com/zehrakbulut/ECommerce/assets/103004228/35097b96-28e0-4d3d-932a-160adb343718)
@@ -60,16 +108,35 @@ ADMİN
 ![Ekran görüntüsü 2024-07-01 163734](https://github.com/zehrakbulut/ECommerce/assets/103004228/d6cea798-b9a8-469b-8ef3-f5e7dd495653)
 
 
-USER
+## USER
 ![Ekran görüntüsü 2024-07-01 195856](https://github.com/zehrakbulut/ECommerce/assets/103004228/3805d79f-8ae4-41ca-972e-d3e47ca8f25d)
 
-DOCKER
+## DOCKER
 ![Ekran görüntüsü 2024-07-01 194908](https://github.com/zehrakbulut/ECommerce/assets/103004228/25ea5e3c-4f78-4f3b-9de5-abdea549c56d)
 
-MONGO DB
+## MONGODB
 ![Ekran görüntüsü 2024-07-01 200748](https://github.com/zehrakbulut/ECommerce/assets/103004228/9a7819a4-233e-42bc-9795-5acfba994f3a)
 ![Ekran görüntüsü 2024-07-01 200638](https://github.com/zehrakbulut/ECommerce/assets/103004228/b2941033-d4ee-4101-9a32-141d699bfabb)
 
 
+## POSTMAN
+![Ekran görüntüsü 2024-07-01 201742](https://github.com/zehrakbulut/ECommerce/assets/103004228/d6bfd02e-f497-49b2-97b8-cc73ebbda5a4)
+
+## DBEAVER
+![Ekran görüntüsü 2024-07-01 201742](https://github.com/zehrakbulut/ECommerce/assets/103004228/f01a7758-a4ee-4759-bef0-05e71643478a)
+
+## PGADMIN
+![Ekran görüntüsü 2024-07-01 202241](https://github.com/zehrakbulut/ECommerce/assets/103004228/afbf4084-72a7-4227-a2e3-72f8f1d497fa)
+
+## SWAGGER
+![Ekran görüntüsü 2024-07-01 202522](https://github.com/zehrakbulut/ECommerce/assets/103004228/d6ed369a-6333-4a34-82fd-936f5e7f22dc)
 
 
+## JWT
+![Ekran görüntüsü 2024-07-01 203044](https://github.com/zehrakbulut/ECommerce/assets/103004228/cc92af92-106d-4473-bfb4-062beeea0484)
+
+---
+
+HEDİYEM'i incelediğiniz için teşekkür ederiM! Bu projenin, e-ticaret uygulamalarında mikroservis mimarisini anlamak ve uygulamak için değerli bir kaynak olmasını umuyorum. Herhangi bir sorunuz veya geri bildiriminiz olursa, lütfen iletişime geçmekten çekinmeyin. İyi kodlamalar!
+
+Zehra Akbulut ❤️
