@@ -7,9 +7,6 @@ HEDİYEM'e hoş geldiniz, mikroservis mimarisi kullanılarak tasarlanmış bir e
 - [Mikroservis Genel Bakış](#mikroservis-genel-bakış)
 - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
 - [Tasarım Desenleri](#tasarım-desenleri)
-- [Başlarken](#başlarken)
-- [Katkıda Bulunma](#katkıda-bulunma)
-- [Lisans](#lisans)
 
 ## Giriş
 HEDİYEM, mikroservis mimarisinin gücünü ve esnekliğini gösteren kapsamlı bir e-ticaret çözümüdür. Uygulamayı daha küçük, bağımsız olarak yönetilebilen servislere bölerek, geliştirme, dağıtım ve ölçeklenebilirliği kolaylaştırıyoruz.
