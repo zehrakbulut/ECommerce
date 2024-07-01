@@ -60,6 +60,8 @@ Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağ�
 
 ## İLETİŞİM
 ![Ekran görüntüsü 2024-07-01 134129](https://github.com/zehrakbulut/ECommerce/assets/103004228/46f13375-54cf-4bf7-a3fc-97dc3c341911)
+![Ekran görüntüsü 2024-07-02 014453](https://github.com/zehrakbulut/ECommerce/assets/103004228/5c814bae-992e-4f01-8f7c-d0b92559d44f)
+
 
 
 
