@@ -31,6 +31,11 @@ SEPET
 ![Ekran görüntüsü 2024-07-01 161349](https://github.com/zehrakbulut/ECommerce/assets/103004228/53803e0d-867a-40f7-92cf-9dff3b3f137a)
 
 
+ÖDEME KISMI
+![Ekran görüntüsü 2024-07-01 162851](https://github.com/zehrakbulut/ECommerce/assets/103004228/ced5073a-7b44-4060-820c-f1f260b3fb7f)
+![Ekran görüntüsü 2024-07-01 162940](https://github.com/zehrakbulut/ECommerce/assets/103004228/dfc73a82-0b10-4633-a3b8-63f2be0e718e)
+![Ekran görüntüsü 2024-07-01 163002](https://github.com/zehrakbulut/ECommerce/assets/103004228/1208771d-c079-480b-8bb6-db8b7bbadae4)
+
 
 ADMİN
 ![Ekran görüntüsü 2024-07-01 140955](https://github.com/zehrakbulut/ECommerce/assets/103004228/39e3291d-9090-4c00-86bf-5ac770331e2d)
@@ -41,7 +46,4 @@ ADMİN
 ![Ekran görüntüsü 2024-07-01 141243](https://github.com/zehrakbulut/ECommerce/assets/103004228/baf5a1ba-3a61-4a48-8899-387120bbbc0e)
 ![Ekran görüntüsü 2024-07-01 141304](https://github.com/zehrakbulut/ECommerce/assets/103004228/a8fb1b40-8a0a-4c57-aff7-355b245479bd)
 
-ÖDEME KISMI
-![Ekran görüntüsü 2024-07-01 162851](https://github.com/zehrakbulut/ECommerce/assets/103004228/ced5073a-7b44-4060-820c-f1f260b3fb7f)
-![Ekran görüntüsü 2024-07-01 162940](https://github.com/zehrakbulut/ECommerce/assets/103004228/dfc73a82-0b10-4633-a3b8-63f2be0e718e)
-![Ekran görüntüsü 2024-07-01 163002](https://github.com/zehrakbulut/ECommerce/assets/103004228/1208771d-c079-480b-8bb6-db8b7bbadae4)
+
