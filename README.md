@@ -1,0 +1,10 @@
+DEFAULT
+![Ekran görüntüsü 2024-07-01 130722](https://github.com/zehrakbulut/ECommerce/assets/103004228/6bb7a84e-8e46-4f00-a811-9b3d48d13961)
+![Ekran görüntüsü 2024-07-01 132233](https://github.com/zehrakbulut/ECommerce/assets/103004228/9e306f0e-dbd1-404c-bd89-dfc4f89f43b7)
+![Ekran görüntüsü 2024-07-01 130751](https://github.com/zehrakbulut/ECommerce/assets/103004228/903736c1-eb03-4fa2-bc2b-ebe59614fca2)
+![Ekran görüntüsü 2024-07-01 132016](https://github.com/zehrakbulut/ECommerce/assets/103004228/e24ebac0-6070-45c5-8cf5-9c4a7dfc7e3f)
+![Ekran görüntüsü 2024-07-01 132052](https://github.com/zehrakbulut/ECommerce/assets/103004228/8546eeff-4ced-4083-b616-1ab376edfcbb)
+![Ekran görüntüsü 2024-07-01 132110](https://github.com/zehrakbulut/ECommerce/assets/103004228/334acaf6-d9bc-4152-a204-6f3020bbe35f)
+![Ekran görüntüsü 2024-07-01 132129](https://github.com/zehrakbulut/ECommerce/assets/103004228/0b05e95c-50b8-40b2-a627-cbac0efcd0c8)
+![Ekran görüntüsü 2024-07-01 132152](https://github.com/zehrakbulut/ECommerce/assets/103004228/a5062d2b-5e62-4ad8-9ae3-a1b86b8c2b41)
+![Ekran görüntüsü 2024-07-01 132210](https://github.com/zehrakbulut/ECommerce/assets/103004228/5b79071f-5fba-47fc-ade8-e71853983d30)
