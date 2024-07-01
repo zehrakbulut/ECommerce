@@ -12,7 +12,7 @@ HEDİYEM'e hoş geldiniz, mikroservis mimarisi kullanılarak tasarlanmış bir e
 HEDİYEM, mikroservis mimarisinin gücünü ve esnekliğini gösteren kapsamlı bir e-ticaret çözümüdür. Uygulamayı daha küçük, bağımsız olarak yönetilebilen servislere bölerek, geliştirme, dağıtım ve ölçeklenebilirliği kolaylaştırıyoruz.
 
 ## Mikroservis Genel Bakış
-Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağımsız olarak yönetilebilen ve birbiriyle iletişim halinde olan servislere bölme yaklaşımıdır. HediyeM'deki her mikroservis belirli bir işlevsellikten sorumludur:
+Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağımsız olarak yönetilebilen ve birbiriyle iletişim halinde olan servislere bölme yaklaşımıdır. HEDİYEM'deki her mikroservis belirli bir işlevsellikten sorumludur:
 - **Kullanıcı Kimlik Doğrulama**: Kullanıcı kayıt ve oturum açma işlemlerini yönetir.
 - **Ürün Yönetimi**: Ürün listeleme ve detaylarını yönetir.
 - **Sepet Yönetimi**: Kullanıcı sepetlerini ve içindeki öğeleri yönetir.
@@ -31,7 +31,6 @@ Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağ�
 - **JWT**: JSON Web Token ile güvenli token tabanlı kimlik doğrulama.
 - **RabbitMQ**: Asenkron iletişim için mesaj aracısı.
 - **DBEaver**: Veritabanı yönetim aracı.
-- **Google Cloud Storage**: Bulut depolama çözümü.
 - **Ocelot**: API Gateway ile istek yönlendirme yönetimi.
 - **Ajax**: Dinamik web sayfaları için asenkron JavaScript ve XML.
 - **Dapper**: Veritabanı işlemleri için hafif ORM.
