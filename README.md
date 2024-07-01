@@ -133,6 +133,6 @@ Mikroservis mimarisi, büyük ve karmaşık bir uygulamayı daha küçük, bağ�
 
 ---
 
-HEDİYEM'i incelediğiniz için teşekkür ederiM! Bu projenin, e-ticaret uygulamalarında mikroservis mimarisini anlamak ve uygulamak için değerli bir kaynak olmasını umuyorum. Herhangi bir sorunuz veya geri bildiriminiz olursa, lütfen iletişime geçmekten çekinmeyin. İyi kodlamalar!
+HEDİYEM'i incelediğiniz için teşekkür ederim! Bu projenin, e-ticaret uygulamalarında mikroservis mimarisini anlamak ve uygulamak için değerli bir kaynak olmasını umuyorum. Herhangi bir sorunuz veya geri bildiriminiz olursa, lütfen iletişime geçmekten çekinmeyin. İyi kodlamalar!
 
 Zehra Akbulut ❤️
